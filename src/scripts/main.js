@@ -9,8 +9,36 @@
 // Pro tip: The card's id attribute, and the button's id attribute should share some common value. Then, when the button is clicked, find the corresponding parent DOM component. Remember the split() method on a string? That will be helpful.
 
 
+const createCardContainer = (guac) => {
+    console.log("createCardContainer was clicked")
+    // create HTML format below
+
+    /* <article class="card" id="card--1">
+                <div>Hey, I entered some text</div>
+                <div>
+                    <button id="delete--1">Delete This Card</button>
+                </div>
+            </article>
+            <article class="card" id="card--2">
+            <div>Hey, I entered some text</div>
+            <div>
+                <button id="delete--2">Delete This Card</button>
+            </div>
+        </article> */
+        // Create unique ID function
+        // Attatch unuique event listeners to each new card
+}
+
 const createButtonHandler = () => {
     console.log("create button was clicked");
+    // insert that new component in the DOMError. branch "add-new-card"
+    // get reference to the "textArea"
+    let newCardText = document.querySelector("#hardText").value
+    console.log(`newCardText wil be "${newCardText}"`)
+    // access the textArea.value? and save to variable
+    // pass that variable into factory function
+    createCardContainer(newCardText)
+
 }
 
 // create textArea Element
@@ -51,16 +79,3 @@ console.log("formEl", formEl)
 
 
 
-
-/* <article class="card" id="card--1">
-<div>Hey, I entered some text</div>
-<div>
-    <button id="delete--1">Delete This Card</button>
-</div>
-</article>
-<article class="card" id="card--2">
-<div>Hey, I entered some text</div>
-<div>
-    <button id="delete--2">Delete This Card</button>
-</div>
-</article> */
